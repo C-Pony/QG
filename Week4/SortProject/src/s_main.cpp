@@ -26,15 +26,15 @@ void randomNumGenerator(int n)
 	srand((unsigned)time(NULL));//先种种子
 	if(n == 10000)//在指定目录下创建txt文件
 	{
-		pf = fopen("C:\\Users\\86135\\Desktop\\QGDataStructure\\Week4\\SortProject\\data1.txt", "a");
+		pf = fopen("data1.txt", "a");
 	}
 	if(n == 50000)
 	{
-		pf = fopen("C:\\Users\\86135\\Desktop\\QGDataStructure\\Week4\\SortProject\\data2.txt", "a");
+		pf = fopen("data2.txt", "a");
 	}
 	if(n == 200000)
 	{
-		pf = fopen("C:\\Users\\86135\\Desktop\\QGDataStructure\\Week4\\SortProject\\data3.txt", "a");
+		pf = fopen("data3.txt", "a");
 	}
 	for(i=0; i<n; i++)
 	{
@@ -67,15 +67,15 @@ void newarray(int *a, int n)
 	FILE *fw;
 	if(n == 10000)//打开对应文件
 	{
-		fw = fopen("C:\\Users\\86135\\Desktop\\QGDataStructure\\Week4\\SortProject\\data1.txt", "r");
+		fw = fopen("data1.txt", "r");
 	}
 	if(n == 50000)
 	{
-		fw = fopen("C:\\Users\\86135\\Desktop\\QGDataStructure\\Week4\\SortProject\\data2.txt", "r");
+		fw = fopen("data2.txt", "r");
 	}
 	if(n == 200000)
 	{
-		fw = fopen("C:\\Users\\86135\\Desktop\\QGDataStructure\\Week4\\SortProject\\data3.txt", "r");
+		fw = fopen("data3.txt", "r");
 	}
 	printf("待排序数组数据：\t");
 	for(i=0; i<n; i++)
