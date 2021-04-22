@@ -77,11 +77,11 @@ void newarray(int *a, int n)
 	{
 		fw = fopen("data3.txt", "r");
 	}
-	printf("待排序数组数据：\t");
+	//printf("待排序数组数据：\t");
 	for(i=0; i<n; i++)
 	{
 		fscanf(fw, "%d", &a[i]);//读取文件数据，遇到空格和换行停止读
-		printf("%5d  ", a[i]);
+		//printf("%5d  ", a[i]);
 	}
 	//printf("\t测试\t");
 	fclose(fw);
@@ -123,13 +123,13 @@ void timer(int size)
 		}
 		end_time = clock();
 		printf("\n插入排序运行时间为：%lfms\n", static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC*1000);
-		printf("SORTED %s!", isSorted(a, size) == SUCCESS ? "SUCCESS":"ERROR");
+		//printf("SORTED %s!", isSorted(a, size) == SUCCESS ? "SUCCESS":"ERROR");
 		printf("\n");
 		system("pause");
 	}
 
 	
-	system("cls");
+	//system("cls");
 	printf("\n\t快速排序（递归版）\n");
 	{
 		clock_t start_time, end_time;
@@ -140,13 +140,13 @@ void timer(int size)
 		}
 		end_time = clock();
 		printf("\n快速排序（递归版）运行时间为：%lfms\n", static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC*1000);
-		printf("SORTED %s!", isSorted(a, size) == SUCCESS ? "SUCCESS":"ERROR");
+		//printf("SORTED %s!", isSorted(a, size) == SUCCESS ? "SUCCESS":"ERROR");
 		printf("\n");
 		system("pause");
 	}
 
 
-	system("cls");
+	//system("cls");
 	printf("\n\t快速排序（非递归版）\n");
 	{
 		clock_t start_time, end_time;
@@ -157,13 +157,13 @@ void timer(int size)
 		}
 		end_time = clock();
 		printf("\n快速排序（非递归版）的运行时间为：%lfms\n", static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC*1000);
-		printf("SORTED %s!", isSorted(a, size) == SUCCESS ? "SUCCESS":"ERROR");
+		//printf("SORTED %s!", isSorted(a, size) == SUCCESS ? "SUCCESS":"ERROR");
 		printf("\n");
 		system("pause");
 	}
 
 
-	system("cls");
+	//system("cls");
 	printf("\n\t计数排序\n");
 	{
 		clock_t start_time, end_time;
@@ -180,13 +180,13 @@ void timer(int size)
 		}
 		end_time = clock();
 		printf("\n计数排序的运行时间为：%lfms\n", static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC*1000);
-		printf("SORTED %s!", isSorted(a, size) == SUCCESS ? "SUCCESS":"ERROR");
+		//printf("SORTED %s!", isSorted(a, size) == SUCCESS ? "SUCCESS":"ERROR");
 		printf("\n");
 		system("pause");
 	}
 
 
-	system("cls");
+	//system("cls");
 	printf("\n\t基数计数排序\n");
 	{
 		clock_t start_time, end_time;
@@ -197,7 +197,7 @@ void timer(int size)
 		}
 		end_time = clock();
 		printf("\n基数计数排序的运行时间为：%lfms\n", static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC*1000);
-		printf("SORTED %s!", isSorted(a, size) == SUCCESS ? "SUCCESS":"ERROR");
+		//printf("SORTED %s!", isSorted(a, size) == SUCCESS ? "SUCCESS":"ERROR");
 		printf("\n");
 	}
 
